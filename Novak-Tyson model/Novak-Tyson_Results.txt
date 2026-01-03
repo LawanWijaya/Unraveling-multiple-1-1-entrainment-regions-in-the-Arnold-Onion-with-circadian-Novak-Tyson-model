@@ -1,0 +1,1 @@
+This folder includes the MATLAB codes used to plot time series diagrams and phase planes for the autonomous Novak-Tyson model and the Novak-Tyson model with a square pulse input.
