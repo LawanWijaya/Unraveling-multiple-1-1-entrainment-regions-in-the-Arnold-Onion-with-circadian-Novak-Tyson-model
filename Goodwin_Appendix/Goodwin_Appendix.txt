@@ -1,0 +1,2 @@
+Appendix B in the paper "Unraveling multiple 1:1 entrainment regions in the Arnold onion diagram: A study of the circadian Novak–Tyson model" refers to the Goodwin oscillator. 
+This folder includes the MATLAB codes and the XPP scripts used to plot results related to the Goodwin oscillator.
