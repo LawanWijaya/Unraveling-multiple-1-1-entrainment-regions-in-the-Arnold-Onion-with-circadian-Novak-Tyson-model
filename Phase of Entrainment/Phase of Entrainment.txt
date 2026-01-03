@@ -1,0 +1,2 @@
+This folder consists of the MATLAB code used to calculate the phase of entrainment.
+The phase of entrainment represents the change of phase between the external forcing and the system response.
