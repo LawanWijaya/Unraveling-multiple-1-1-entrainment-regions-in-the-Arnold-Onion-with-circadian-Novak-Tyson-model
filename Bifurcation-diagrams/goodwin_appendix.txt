@@ -1,9 +1,0 @@
-x'=a/(1+z^n)-x
-y'=x-y
-z'=y-z
-param n=5,a=100
-#param a=1.5, n=20
-@ total=500
-@ ds=0.001,Nmax=8000,Ntst=3000,Npr=200,dsmin=1e-5,dsmax=0.1,Parmin=4,Parmax=15,Norm Max=2000
-@ autoxmin=4,autoxmax=15,autoymin=0,autoymax=0.1
-done
