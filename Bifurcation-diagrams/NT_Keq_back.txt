@@ -1,0 +1,38 @@
+# NT Model 2D
+
+dM/dt = vm/(1+(Pt*(1-q)/(2*Pcrit))^2)-km*M
+dPt/dt = vp*M - (kp1*Pt*q + kp2*Pt)/(Jp +Pt) - kp3*Pt
+
+param Keq=600, vm=1, km=0.1, vp=0.5, kp1=10, kp2=0.03, kp3=0.1
+param Pcrit=0.1, Jp=0.05
+#Keq is the bifurcation parameter
+
+q=2/(1+sqrt(1+8*Keq*Pt))
+
+
+#q*(1+ sqrt(1+8*Keq*Pt))=2
+#q=\frac{2}{1+ sqrt(1 + 8*Keq*Pt)}
+
+#init M=0.1,  Pt=0.1
+
+@ total=500, bounds=1e8, method=stiff
+@ xp=t,yp=Pt
+@ xlo=0,ylo=0,xhi=500,yhi=5
+@ ds=-0.01,Nmax=1000000,Ntst=4000,Npr=500,dsmin=1e-5,dsmax=0.1
+@ Parmin=0,Parmax=600,Norm Max=2000
+@ autoxmin=0,autoxmax=600,autoymin=0,autoymax=11
+
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
